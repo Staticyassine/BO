@@ -1,0 +1,81 @@
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-white headroom headroom--top headroom--pinned ">
+  <div class="container">
+    <a class="navbar-brand mr-lg-5" [routerLink]="['/landing']">
+      <img src="./assets/img/brand/logo.png">
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a [routerLink]="['/home']">
+              <img src="./assets/img/brand/blue.png">
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+                  [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">   
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret text-warning" data-toggle="dropdown" role="button" href="#wibo">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text">{{'NavBar.wibo'|translate}}</span>
+          </a>          
+        </li>     
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret text-warning" data-toggle="dropdown" role="button" href="#features">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text">{{'NavBar.features'|translate}}</span>
+          </a>          
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret text-warning" data-toggle="dropdown" role="button" href="#testimonial">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text">{{'NavBar.testimonials'|translate}}</span>
+          </a>
+         </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link no-caret text-warning" data-toggle="dropdown" role="button" href="#con">
+            <i class="ni ni-ui-04 d-lg-none"></i>
+            <span class="nav-link-inner--text">{{'NavBar.con'|translate}}</span>
+          </a> 
+        </li>
+      </ul>
+
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link no-caret" data-toggle="dropdown" role="button" href="#features">
+          <i class="ni ni-collection d-lg-none"></i>
+          <span class="nav-link-inner--text"><i class="ni ni-world mr-2" style="color: #F05408;"></i></span>
+          <span class="nav-link-inner--text" style="color: #F05408; font-weight: bold">{{'NavBar.language'|translate}}</span>
+        </a>
+        <div class="dropdown-menu">
+          <a  (click)="changelanguage('en')" class="dropdown-item">{{'NavBar.en'|translate}}<img src="./assets/img/brand/en.png"> </a>
+          <a  (click)="changelanguage('ar')" class="dropdown-item">{{'NavBar.ar'|translate}}<img src="./assets/img/brand/ma.png"></a>       
+        </div>
+      </li>
+      </ul>
+
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto" st>                
+        <li class="nav-item d-none d-lg-block ml-lg-4 ">
+          <a target="_blank" class="btn btn-warning btn-icon" href="#login">
+            <span class="btn-inner--icon" >
+              <i class="ni ni-world mr-2" style="color: #ffffff;"></i>
+            </span>
+            <span class="nav-link-inner--text" >Log In</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

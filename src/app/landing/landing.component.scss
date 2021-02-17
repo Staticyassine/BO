@@ -1,0 +1,99 @@
+.carousel-control-next,
+.carousel-control-prev {
+ background-color:#f5593d;
+ border-radius:50%;
+ opacity:1;
+ text-shadow:none;
+ font-size:12px
+}
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+ opacity:1;
+ background-color:#f33816
+}
+.carousel-control-prev-icon {
+ background-image:none!important;
+ margin-top:-5px
+}
+.carousel-control-prev-icon:before {
+ color:#fff;
+ margin:2px;
+ padding-right:3px;
+ font:23px/1 FontAwesome!important;
+ content:"\f104"!important
+}
+.carousel-control-next-icon {
+ background-image:none!important;
+ margin-top:-5px
+}
+.carousel-control-next-icon:before {
+ color:#fff;
+ margin:2px;
+ padding-left:2px;
+ font:23px/1 FontAwesome!important;
+ content:"\f105"!important
+}
+.carousel-control-prev {
+ height:30px;
+ top:48%;
+ width:30px;
+ left:20px;
+ opacity:0
+}
+.carousel-control-next {
+ height:30px;
+ right:20px;
+ top:48%;
+ width:30px;
+ opacity:0
+}
+.carousel-control .fa,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+ display:inline-block;
+ z-index:5
+}
+.carousel-control-prev .fa {
+ font-size:26px;
+ margin:2px;
+ padding-right:3px
+}
+.carousel-control-next .fa {
+ font-size:26px;
+ margin:2px;
+ padding-left:3px
+}
+.carousel-control-next,
+.carousel-control-prev {
+ background-image:none
+}
+.page-carousel {
+ border-radius:12px!important;
+ border:none!important
+}
+.carousel-inner .carousel-item img {
+ border-radius:12px;
+ box-shadow:0 2px 2px rgba(204,197,185,.5);
+ height:400px;
+ width:100%
+}
+.carousel-indicators {
+ bottom:0
+}
+.carousel-indicators li {
+ background-color:#fff;
+ border:0
+}
+.carousel-indicators .active {
+ background-color:#f5593d
+}
+.page-carousel:hover .carousel-control-next,
+.page-carousel:hover .carousel-control-prev {
+ opacity:1;
+ transition:all .3s linear
+}
+ngb-carousel:focus {
+ outline:0!important
+}

@@ -1,0 +1,19 @@
+{
+    "HOME": {
+        "bo": "Bee One",
+        "fsm": "Farm Software Management",
+        "gyn": "Get Yours Now !",
+        "features": "Features"
+    },
+    "NavBar": {
+        "hiw": "How It Works",
+        "features": "Features",
+        "testimonials": "Testimonials",
+        "language": "Languages",
+        "login": "LOG IN",
+        "en": "English  ",
+        "ar": "Arabic   ",
+        "wibo": "Product",
+        "con": "Contact us"         
+    }
+}

@@ -14,10 +14,10 @@
   <div class="container">
     <div class="row row-grid align-items-center" [ngClass]="{'my-md': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login', 'mb-5':getPath()==='/user-profile' || getPath()==='/register' || getPath()==='/login'}">
       <div class="col-lg-6">
-        <h5 class="text-success font-weight-light mb-2">Agridata Consulting, Imm.Azizia, 2ème ét, Av .Hassan II AGADIR</h5>
-        <h6 class="mb-0 font-weight-light">Tel : (212) 66 33 47 093.</h6>
-        <h6 class="mb-0 font-weight-light">Fixe : (212) 528 82 84 44.</h6>
-        <h6 class="mb-0 font-weight-light">Fax : (212) 528 82 59 49.</h6>
+        <h5 class="text-success font-weight-light mb-2">{{'Footer.adresse'|translate}}</h5>
+        <h6 class="mb-0 font-weight-light">{{'Footer.tel'|translate}}</h6>
+        <h6 class="mb-0 font-weight-light">{{'Footer.fix'|translate}}</h6>
+        <h6 class="mb-0 font-weight-light">{{'Footer.fax'|translate}}</h6>
       </div>
       <div class="col-lg-6 text-lg-center btn-wrapper">
         <a target="_blank" href="" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">

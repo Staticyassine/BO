@@ -8,12 +8,68 @@
     "NavBar": {
         "hiw": "How It Works",
         "features": "Features",
-        "testimonials": "Downloads",
+        "downloads": "Downloads",
         "language": "Languages",
         "login": "LOG IN",
         "en": "English  ",
         "ar": "Arabic   ",
-        "wibo": "Product",
-        "con": "Contact us"         
+        "product": "Product",
+        "con": "Contact us",
+        "loginbutton": "LOG IN"     
+         
+    },
+    "Product": {
+        "wibo": "WHAT IS BEE ONE?",
+        "title": "BEE ONE is AGRIDATA’s leading Farm Management Software for growers.",
+        "text1": "BEE ONE helps you manage your farm operations, keep records, track labor and monitor input usage.",
+        "text2": "Our product was built by farmers and has helped them since 2008 optimize and reduce their costs of production using our Desktop and Mobile apps",
+        "gsbs": "Grow smarter, better and safer with BEE ONE."                 
+    },
+    "Features": {
+        "of": "OUR FEATURES",
+        "rco": "Record Cultural Operations",
+        "rcoText": "Record irrigation, fertilization and phytosanitary spray per block with granular precision on used products and their amounts. With BEE ONE, your harvest, sowing or any other production practices are centralized and one click/tap away.",
+        "cm": "Crop monitoring",
+        "cmText": "Monitor your plant’s health, stage developpement and technical state using pictures, sampling methods and detailed records per block or plant.",
+        "wfm": "Workforce management",
+        "wfmText": "Because the workforce takes up to 35% of production costs, managing and clocking workers on the field is a must for any data-driven Farm. Get instant insight on the operations currently being done and the number of workers doing them.",
+        "whm": "Warehouse Management",
+        "whmText": "Manage your inventory and track input usage.",
+        "ca": "Cost Accounting From A to Z" ,
+        "caText": "Want more details on your cost structure? BEE ONE’s cost accounting approach defines cost centers to pinpoint each expense and it’s rightful attribution." ,
+        "trac": "Traceability",
+        "tracText": "With BEE ONE's Traceability module, view where any product came from and monitor workers productivity effortlessly.",
+        "aar": "Analytics and Reports",
+        "aarText": "BEE ONE’s outputs can shave days off the auditing process with its multiple ready-to-use reports and real time dashboards.",
+        "wmr": "Want more reports?",
+        "wmrText": "BEE ONE’s reporting database is an open DataWarehouse available for BI or advanced analytics to dig deeper and freely into your data."                  
+    },
+    "Downloads": {
+        "title": "DOWNLOAD OUR APPS",
+        "subtitle": "Barcodes links to apps.",
+        "beeone": "BEE ONE",
+        "hp": "Harvest Previsions ",
+        "tm": "Technical Management"                  
+    },
+    "Contact": {
+        "title": "The leading ERP for the agricultural profession, an exceptional functional wealth. Make the choice of mastery and performance.",
+        "button": "CONTACT US",
+        "FormTitle": "Request your demo right now!",
+        "FormSubTitle": "To request a quote or for any other information, contact us. We will process your request as soon as possible. ",
+        "placeholderName": "Your name",
+        "placeholderAdresse": "Email address",
+        "youare": "You are?",
+        "fm": "Farm manager",
+        "inst": "Institutional",
+        "fo": "Farm operator",
+        "other": "Other",
+        "placeholderMessage": "Type a message...",
+        "SubmiteButton": "Send Message"                  
+    },
+    "Footer": {
+        "adresse": "Agridata Consulting, Imm.Azizia, 2ème ét, Av .Hassan II AGADIR",
+        "tel": "Tel : (212) 66 33 47 093.",
+        "fix": "Fixe : (212) 528 82 84 44.",
+        "fax": "Fax : (212) 528 82 59 49."
     }
 }

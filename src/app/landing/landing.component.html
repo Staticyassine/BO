@@ -256,22 +256,25 @@
         <div id="contact" class="col-lg-8">
           <div class="card bg-gradient-secondary shadow">
             <div class="card-body p-lg-5">
+              <form>
               <h4 class="mb-1">{{'Contact.FormTitle'|translate}}</h4>
               <p class="mt-0">{{'Contact.FormSubTitle'|translate}}</p>
+
               <div class="form-group mt-5" [ngClass]="{'focused':focus===true}">
                 <div class="input-group input-group-alternative">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="ni ni-user-run"></i></span>
                   </div>
-                  <input class="form-control" placeholder="{{'Contact.placeholderName'|translate}}" type="text" (focus)="focus=true" (blur)="focus=false">
+                  <input class="form-control" placeholder="{{'Contact.placeholderName'|translate}}" type="text" (focus)="focus=true" (blur)="focus=false" [formControl]="nameFormControl" >
                 </div>
               </div>
+
               <div class="form-group" [ngClass]="{'focused':focus1===true}">
                 <div class="input-group input-group-alternative">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                   </div>
-                  <input class="form-control" placeholder="{{'Contact.placeholderAdresse'|translate}}" type="email" (focus)="focus1=true" (blur)="focus1=false">
+                  <input class="form-control" placeholder="{{'Contact.placeholderAdresse'|translate}}" type="email" (focus)="focus1=true" (blur)="focus1=false" [formControl]="emailFormControl">
                 </div>
               </div>
 
@@ -279,23 +282,24 @@
               <div class="form-group" [ngClass]="{'focused':focus1===true}">
                 <div class="input-group input-group-alternative">
                   <div  style="width: 100%;display: block;" class="input-group-prepend">
-                    <select class="form-control" aria-label="Default select example">
+                    <select class="form-control" aria-label="Default select example" [formControl]="typeFormControl">
                       <option class="form-control"  value="" disabled selected hidden >{{'Contact.youare'|translate}}</option>
-                      <option value="1">{{'Contact.fm'|translate}}</option>
-                      <option value="2">{{'Contact.inst'|translate}}</option>
-                      <option value="3">{{'Contact.fo'|translate}}</option>
-                      <option value="4">{{'Contact.other'|translate}}</option>
+                      <option value="Farm manager">{{'Contact.fm'|translate}}</option>
+                      <option value="Institutional">{{'Contact.inst'|translate}}</option>
+                      <option value="Farm operator">{{'Contact.fo'|translate}}</option>
+                      <option value="Other">{{'Contact.other'|translate}}</option>
                     </select>                    
                   </div>                                  
                 </div>                
               </div>
 
               <div class="form-group mb-4">
-                <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80" placeholder="{{'Contact.placeholderMessage'|translate}}"></textarea>
+                <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80" placeholder="{{'Contact.placeholderMessage'|translate}}" [formControl]="textFormControl"></textarea>
               </div>
               <div>
-                <button type="button" class="btn btn-default btn-round btn-block btn-lg">{{'Contact.SubmiteButton'|translate}}</button>
+                <button mat-raised-button [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading" type="button" class="btn btn-default btn-round btn-block btn-lg" (click)="register()">{{buttionText}}>{{'Contact.SubmiteButton'|translate}}</button>
               </div>
+            </form>
             </div>
           </div>
         </div>
